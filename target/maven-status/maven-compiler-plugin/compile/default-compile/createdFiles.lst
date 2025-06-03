@@ -2,6 +2,7 @@ com\saojudas\sistemalavanderia\TelaMenuPrincipal.class
 com\saojudas\sistemalavanderia\TelaOrdemServicos$9.class
 com\saojudas\sistemalavanderia\TelaClientes$3.class
 com\saojudas\sistemalavanderia\TelaMenuPrincipal$1.class
+com\saojudas\sistemalavanderia\Service\ClientService.class
 com\saojudas\sistemalavanderia\TelaLogin$2.class
 com\saojudas\sistemalavanderia\TelaUsuarios$4.class
 com\saojudas\sistemalavanderia\TelaClientes$5.class
@@ -13,6 +14,8 @@ com\saojudas\sistemalavanderia\TelaOrdemServicos$5.class
 com\saojudas\sistemalavanderia\TelaMenuPrincipal$3.class
 com\saojudas\sistemalavanderia\TelaLogin$1.class
 com\saojudas\sistemalavanderia\TelaUsuarios$5.class
+com\saojudas\sistemalavanderia\Service\LoginService.class
+com\saojudas\sistemalavanderia\Model\Cliente.class
 com\saojudas\sistemalavanderia\TelaOrdemServicos$8.class
 com\saojudas\sistemalavanderia\TelaMenuPrincipal$5.class
 com\saojudas\sistemalavanderia\TelaOrdemServicos$3.class
@@ -28,6 +31,7 @@ com\saojudas\sistemalavanderia\TelaUsuarios$1.class
 com\saojudas\sistemalavanderia\TelaClientes.class
 com\saojudas\sistemalavanderia\TelaUsuarios$6.class
 com\saojudas\sistemalavanderia\Conexao\ConexaoBanco.class
+com\saojudas\sistemalavanderia\Service\UserService.class
 com\saojudas\sistemalavanderia\TelaOrdemServicos$4.class
 com\saojudas\sistemalavanderia\TelaOrdemServicos.class
 com\saojudas\sistemalavanderia\TelaMenuPrincipal$2.class

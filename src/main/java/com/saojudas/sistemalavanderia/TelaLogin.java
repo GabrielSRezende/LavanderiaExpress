@@ -5,6 +5,7 @@
 package com.saojudas.sistemalavanderia;
 
 import com.saojudas.sistemalavanderia.Conexao.ConexaoBanco;
+import com.saojudas.sistemalavanderia.Service.LoginService;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -143,13 +144,12 @@ public class TelaLogin extends javax.swing.JFrame {
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         String usuario = txtUsuario.getText();
         String senha = new String(txtSenha.getPassword());
+
         try {
-            String query = "SELECT * FROM usuarios WHERE nome_usuario = ? AND senha = ?";
-            PreparedStatement stmt = ConexaoBanco.getConexao().prepareStatement(query);
-            stmt.setString(1, usuario);
-            stmt.setString(2, senha);
-            ResultSet rs = stmt.executeQuery();
-            if (rs.next()) {
+            LoginService loginService = new LoginService();
+            boolean autenticado = loginService.autenticar(usuario, senha);
+
+            if (autenticado) {
                 dispose();
                 new TelaMenuPrincipal().setVisible(true);
             } else {

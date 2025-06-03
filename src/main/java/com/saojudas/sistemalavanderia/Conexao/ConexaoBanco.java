@@ -13,7 +13,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBanco {
-    private static Connection conexao;
+    public static Connection conexao;
 
     public static Connection getConexao() {
         if (conexao == null) {
